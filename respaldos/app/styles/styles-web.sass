@@ -1,0 +1,973 @@
+$fuente-lato-black : 'latoblack';
+$fuente-lato-regular : 'latoregular';
+$fuente-lato-hairline : 'latohairline';
+$fuente-lato-italic : 'latoitalic';
+$fuente-lato-blackitalic : 'latoblack_italic';
+
+$color-negro1 : #000;
+$color-blanco1 : #FFF;
+$color-blanco2 : #FBFBFB;
+$color-blanco3 : #FFFFFE;
+$color-verde1 : #5AFA79;
+$color-morado1 : #5E27F5;
+$color-morado2 : #5F28F6;
+$color-morado3: #A500FF;
+$color-morado4: #675CB7;
+$color-morado5: #6B01D8;
+$color-morado6: #2B137D;
+$color-azul1: #1B2634;
+$color-verde2: #62BCA3;
+$color-rosa: #EA0673;
+$color-azul2: #5AB8E1;
+
+//-------
+$color-verde3: #00F871;
+
+//===> Karla - Styles
+// -- -- Modal Contacto
+#ys-modalContacto	
+	.modal-content
+		background-color: transparent
+		//background-image: url('../images/back-formulario.png')
+		background-size: cover
+		border-radius: 0
+		border: none
+		box-shadow: none
+		.modal-header
+			border-bottom:  none
+			display: none
+
+		.modal-body
+			//background-color: transparent
+			color: $color-negro1
+			padding-top: 2em
+			padding-right: 5em
+			padding-left: 5em
+			padding-bottom: 4em
+			.ys-close-mobil
+				display: none
+			.ys-msjConfirmacion
+				display: block
+				img
+					margin-top: -40em
+					width: 45em
+					height: 25em
+				.ys-msj-confirmacion
+					margin-top: -4em
+					strong
+						font-family: $fuente-lato-black
+						font-size: 1.25em
+					span
+						font-family: $fuente-lato-regular
+						font-size: 1.25em
+						text-align: center
+					&.ys-show
+						display: block			
+			.ys-dupla
+				margin-left: 1em
+				& > *
+					display: block
+				label
+					color: $color-negro1
+					font-family: $fuente-lato-black
+					border-bottom: solid $color-negro1 1px
+
+				.ys-input
+					background-color: $color-verde3
+					border: none
+					font-family: $fuente-lato-regular					
+					color: $color-blanco1
+					padding: 1em
+					padding-left: 0
+					width: 90%
+
+					&:focus
+						outline: 0px
+					
+					&::-webkit-input-placeholder
+					    color: $color-blanco1
+					&:-moz-placeholder
+					    color: $color-blanco1
+					&::-moz-placeholder
+					    color: $color-blanco1
+					&:-ms-input-placeholder
+					    color: $color-blanco1
+					    
+				.ys-textarea
+					background-color: $color-blanco1
+					border: none
+					color: $color-negro1
+					width: 100%
+					&:focus
+						outline: 0px
+
+					&::-webkit-input-placeholder
+					    color: #CCC
+					&:-moz-placeholder
+					    color: #CCC
+					&::-moz-placeholder
+					    color: #CCC
+					&:-ms-input-placeholder
+					    color: #CCC
+
+			.ys-col-1
+				background-color: $color-verde3
+				h4
+					color: $color-negro1
+					font-family: $fuente-lato-hairline
+					font-size: 4.28em					
+					margin-left: 0.2em
+					padding-top: 12px
+					-ms-font-feature-settings: "liga", "dlig"
+					-webkit-font-feature-settings: "liga", "dlig"
+					-moz-font-feature-settings: "liga", "dlig"
+					font-feature-settings: "liga", "dlig"			
+				& > div
+					&:nth-of-type(1)
+						margin-top: 3.2em
+				.ys-dupla
+					margin-bottom: 3em
+			.ys-col-2
+				background-color: $color-blanco1
+				min-height: 33.7em
+				position: relative
+
+				.close
+					background-image: url('../images/img-cerrar-contacto.png')
+					background-size: cover
+					background-position: center center
+					height: 40px
+					opacity: 1
+					position: absolute
+					right: 4%
+					top: 3%
+					width: 40px
+
+				.ys-content-btn
+					background-color: transparent
+					margin-top: 4.5em
+					width: 94%
+					text-align: right
+					button
+						font-family: $fuente-lato-black
+						background-color: $color-verde3
+						border-radius: 1em
+						border-color: transparent
+						color: $color-negro1
+						font-size: 1em
+						padding: 0.5em 4em 
+						margin-top: 25%
+				.ys-dupla
+					margin-top: 9.2em
+					label
+						border-bottom: 1px solid  $color-verde3
+					.ys-input
+						min-height: 170px
+
+		.modal-footer
+			border-top: none
+			display: none
+
+// -- Fin -- Modal Contacto	
+//===> Fin - Karla Styles
+
+body
+	background-color: transparent
+	font-size: 16px
+
+//--- Nav Menu
+.ys-seccion-nav
+	nav
+		padding-top: 0
+		padding-bottom: 0
+	.navbar-default
+		background-color: $color-negro1
+		border-color: $color-negro1
+
+	.container
+		max-width: 1200px
+
+		.navbar-header
+			.navbar-brand
+				img
+					display: block
+					margin: -10px
+					width: 200px					
+		.navbar-collapse
+			.navbar-nav
+				float: right
+				li
+					&.ys-li-tel
+						strong
+							font-family: $fuente-lato-black
+					a
+						color: $color-blanco1
+						font-family: $fuente-lato-hairline
+						font-size: 0.85em
+						& > *
+							display: inline-block
+							vertical-align: middle
+						span
+							margin-left: 10px
+
+					.ys-bol
+						background-color: $color-verde1
+						border-radius: 50%
+						display: none
+						height: 0.25em
+						margin: 0 auto
+						margin-top: -0.5em
+						width: 0.25em
+					&.ys-active
+						a
+							font-family: $fuente-lato-black
+						.ys-bol
+							display: block
+//---/ Fin Nav - Menu
+
+//---
+.ys-subtitulo
+	font-family: $fuente-lato-black
+	font-size: 3.75em
+	line-height: 1em
+	span
+		display: block
+
+.ys-btn
+	background-color: transparent
+	border-radius: 2em
+	cursor: pointer
+	display: block
+	font-size: 0.6em
+	font-family: $fuente-lato-black
+	letter-spacing: 0.5em
+	min-width: 125px
+	padding: 1em 3em	
+	text-transform: uppercase
+	text-align: center
+
+//---
+.ys-container-page
+	padding-right: 0
+	padding-left: 0
+	
+.ys-seccion-inicio
+	background-color: $color-negro1
+	min-height: 750px
+	padding-left: 0
+	padding-right: 0
+	position: relative	
+	.container
+		padding-left: 0
+		padding-right: 0
+
+	& > .container
+		bottom: 0
+		color: $color-blanco1
+		left: 0
+		position: absolute
+		text-align: center
+		width: 100%
+		
+		&.ys-relative
+			padding-top: 5em
+			position: relative
+
+		.ys-slogan-bg
+			span
+				display: block
+				font-size: 4.5em
+				font-family: $fuente-lato-hairline
+				line-height: 1em
+				font-weight: 100
+		.ys-slogan-sm
+			margin-top: 2em
+			span
+				font-family: $fuente-lato-regular
+				font-size: 1.125em				
+				strong
+					font-family: $fuente-lato-black
+					font-size: 1.125em
+		
+		.ys-content-btn
+			margin-top: 5.5%
+			span
+				background-color: $color-morado1
+				border-radius: 2em
+				color: $color-blanco1
+				display: inline-block
+				font-size: 1em
+				font-family: $fuente-lato-regular
+				padding: 0.5em 3em
+				position: relative
+				text-transform: uppercase
+				letter-spacing: 4px
+				z-index: 3
+				cursor: pointer //karla
+
+		.ys-content-flamas
+			position: relative
+			.ys-nodos
+				position: absolute
+				top: -4.5em
+				z-index: 2
+				width: 100%
+				.ys-imgNodos
+					display: block
+					margin: 0 auto
+					width: 72.5%
+			.ys-flamas
+				margin-top: 4.3em
+				.ys-imgFlamas
+					display: block
+					margin: 0 auto
+					width: 100%
+.ys-seccion-conexiones
+	background-color: $color-blanco2	
+	padding-top: 6.5%
+	padding-bottom: 0
+	padding-left: 0
+	padding-right: 0
+	
+	.row
+		margin-left: 0
+		margin-right: 0
+
+	.ys-subtitulo
+		color: $color-verde1
+		padding-top: 15%
+		padding-bottom: 15%
+	
+	.ys-hidde
+		display: none
+	.ys-show
+		display: block
+
+	.ys-colext-1
+		.ys-content-cols
+			padding-top: 0
+			.ys-col-1,
+			.ys-col-2
+				font-family: $fuente-lato-regular
+			.ys-col-3
+				font-family: $fuente-lato-black
+				p
+					&:nth-of-type(2)
+						margin-top: 2em
+			p
+				font-size: 1em
+				&.ys-strong
+					font-weight: bold
+
+		.ys-content-btn
+			margin-top: 20%
+			& > span
+				display: inline-block
+				vertical-align: middle
+				&:nth-of-type(1)
+					padding-right: 1.5em
+					vertical-align: super
+				&:nth-of-type(2)
+					font-size: 1em
+					font-family: $fuente-lato-regular
+					padding-right: 1.5em
+					strong
+						font-family: $fuente-lato-black
+				&:nth-of-type(3)
+					padding-right: 0
+					padding-left: 0
+					.ys-btn
+						border: 1px solid $color-verde1
+	.ys-colext-2
+		background-color: transparent
+		background-repeat: no-repeat
+		background-position: right center
+
+	.ys-content-conexion1
+		background-color: transparent
+		background-image: url('../images/img-backConexiones.svg')
+		background-repeat: no-repeat
+		background-size: 60%
+		background-position: right center
+		margin: 0 auto
+		
+		.ys-colext-1
+			font-size: 1em
+
+	.ys-content-conexion2
+		background-color: transparent
+		font-family: $fuente-lato-regular
+		padding-top: 0
+		padding-bottom: 5em
+		position: relative
+		
+		//---Boton de cierre de las secciones emergentes o deslizadas
+		.ys-btn-cerrar
+			background-image: url('../images/img-cerrar-verde.svg')
+			background-size: cover
+			cursor: pointer
+			height: 70px
+			position: absolute
+			right: 3%
+			top: -10%
+			width: 70px
+			z-index: 3
+
+		& > div
+			padding-left: 0
+			padding-right: 0		
+		.ys-fila-1
+			margin-top: 4em
+			margin-bottom: 2em
+			text-align: center
+			& > div
+				span
+					display: inline-block
+					font-size: 1em
+					vertical-align: middle
+					&:nth-of-type(2)
+						padding: 0 1em
+		.ys-fila-2
+			padding: 2em 0
+			& > div
+				position: relative
+				.ys-line
+					background-color: $color-negro1
+					height: 2px
+					position: absolute
+					top: 3em
+					width: 100%
+					z-index: 1
+				.ys-icons
+					text-align: center
+					& > div
+						display: inline-block
+						text-align: center
+						width: 20%
+						img
+							max-width: 90px
+							position: relative
+							z-index: 2
+							-webkit-duration: 2s
+							-webkit-delay: 2s
+							-webkit-iteration-count: infinite
+							-moz-duration: 2s
+							-moz-delay: 2s
+							-moz-iteration-count: infinite
+							-ms-duration: 2s
+							-ms-delay: 2s
+							-ms-iteration-count: infinite
+
+				.ys-frase
+					font-size: 1em
+					padding-top: 2.5em
+					text-align: center
+					strong
+						font-family: $fuente-lato-black
+		.ys-fila-3
+			margin-top: 3em
+			padding: 2em 0			
+			& > div
+				position: relative
+				.ys-line
+					background-color: $color-negro1
+					height: 2px
+					position: absolute
+					top: 3em
+					width: 100%
+				.ys-icons
+					position: relative
+					text-align: center
+					& > div
+						display: inline-block
+						text-align: center
+						width: 20%
+						img							
+							max-width: 90px
+							position: relative
+							z-index: 2
+				.ys-frase
+					font-size: 1em
+					padding-top: 2.5em
+					text-align: center
+					strong
+						font-family: $fuente-lato-black
+		.ys-subtitulo
+			text-align: center
+
+//---General Thinking
+//--=> Desing
+.ys-seccion-thinking
+	background-color: $color-blanco3
+	display: block
+	margin: 0 auto
+	padding-left: 0
+	padding-right: 0	
+	
+	&.ys-hidde
+		display: none
+	&.ys-show
+		display: block
+
+	.ys-hidde
+		display: none
+	.ys-show
+		display: block
+
+	.row
+		margin-left: 0
+		margin-right: 0
+
+	& > .container-fluid
+		padding-left: 0
+		padding-right: 0
+
+		& > .row
+			border-top: solid 1px #CCC
+			margin-left: 0
+			margin-right: 0
+
+	.ys-colext-1
+		padding-left: 6%
+		padding-right: 7%		
+		.ys-subtitulo
+			color: $color-morado1
+			margin-top: 21%
+		.ys-content-p
+			padding-top: 50%
+			p
+				font-family: $fuente-lato-regular
+				font-size: 1em
+				&.ys-strong
+					font-family: $fuente-lato-black
+					padding-top: 2em
+		.ys-content-btn
+			background-image: url('../images/img-backPacks.png')
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: contain
+			margin-top: 35%
+			padding-top: 4em
+			padding-bottom: 3em
+			position: relative
+			.ys-img-ciclo
+				position: absolute
+				left: 12.5%
+				top: -10%
+			.ys-btn
+				border: solid 1px $color-morado1
+				display: block
+				margin: 0 auto
+	.ys-colext-2
+		padding-right: 0
+		.ys-content-tit
+			padding-top: 5.68em
+			padding-bottom: 5em
+			h4				
+				font-family: $fuente-lato-hairline
+				font-size: 3.75em
+		.ys-btncerrar
+			background-size: cover
+			cursor: pointer
+			height: 50px
+			position: absolute					
+			top: 1.5%
+			right: 1%
+			width: 50px
+		.ys-contentgrid-cuadro			
+			padding-left: 10px
+			.ys-clear
+				float: left
+				clear: both
+			.ys-item
+				background-position: center center
+				background-size: cover
+				background-repeat: no-repeat
+				//border: solid 1px $color-negro1
+				float: left
+				margin: 0
+				text-align: center
+				.ys-logo-item
+					display: inline-block
+					cursor: auto
+					span
+						text-align: center
+						img
+							margin: 0 auto
+							width: 75%
+				&.ys-item-p1
+					background-image: url('../images/fondo-design-p1.png')
+				&.ys-item-p2
+					background-image: url('../images/fondo-design-p2.png')
+				&.ys-item-p3
+					background-image: url('../images/fondo-design-p3.png')
+				&.ys-item-p4
+					background-image: url('../images/fondo-design-p4.png')
+				&.ys-item-p5
+					background-image: url('../images/fondo-design-p5.png')
+				&.ys-item-p6
+					background-image: url('../images/fondo-design-p6.png')
+				&.ys-item-p7
+					background-image: url('../images/fondo-design-p7.png')
+				&.ys-item-p8
+					background-image: url('../images/fondo-design-p8.png')
+				&.ys-item-p9
+					background-image: url('../images/fondo-design-p9.png')
+
+
+	[data-nameSection=sectionThinking-especificaciones]
+		.ys-colext-1
+			.ys-content-btn			
+				background-image: none
+		.ys-colext-2
+			background-color: $color-morado2
+			color: $color-blanco1			
+			.ys-datosEspecificaciones
+				position: relative
+				.ys-cerrar-especificaciones
+					background-image: url('../images/img-cerrar-blanco.png')
+				.ys-content-tit
+					h4
+						color: $color-blanco1
+				.ys-content-info
+					padding-bottom: 5.68em
+					.ys-col
+						h5
+							font-size: 1.625em
+							border-bottom: solid 1px $color-blanco1
+							padding-bottom: 0.8em
+							text-align: center
+						h6
+							color: $color-blanco1
+							font-size: 1.25em
+							font-family: $fuente-lato-regular
+							font-weight: bold
+							font-style: italic
+						.ys-seccion-parrafo
+							margin-top: 2em
+							p
+								font-size: 0.75em
+								font-family: $fuente-lato-regular
+						.ys-content-presupuesto
+							margin-bottom: 2em						
+							.ys-col-icon
+								display: inline-block
+								vertical-align: top
+								width: 10%
+								.ys-icon
+									background-color: transparent
+									background-repeat: no-repeat
+									background-size: cover
+									cursor: pointer
+									height: 1.5em
+									display: block
+									margin-top: 0.5em
+									width: 1.5em
+									&.ys-inactive
+										background-image: url('../images/icon-presupuesto-inactivo.svg')
+									&.ys-active
+										background-image: url('../images/icon-presupuesto-activo.svg')
+							.ys-col-info
+								display: inline-block
+								vertical-align: top
+								width: 88%
+								p
+									font-size: 0.75em
+									font-family: $fuente-lato-regular
+							
+						.ys-content-valorpresupuesto
+							display: none
+							.ys-content-total							
+								border-top: solid 1px $color-blanco1
+								border-bottom: solid 1px $color-blanco1
+								display: block
+								padding: 0.5em 0
+								text-align: center
+								label
+									font-size: 1.25em
+									font-family: $fuente-lato-black
+									letter-spacing: 2px
+						&.ys-col-1
+							display: none
+							max-width: 150px
+							padding-top: 15%
+							text-align: right							
+							h6								
+								font-size: 1.1em
+								text-align: right
+								span
+									display: block
+							.ys-ejemplo								
+								font-size: $fuente-lato-regular
+								span
+									display: block
+									img
+										display: inline-block
+									&:nth-of-type(2)
+										font-size: 0.85em
+						&.ys-col-2
+							margin-left: 12.5%
+			.ys-content-btn
+				text-align: center
+				padding-bottom: 4em
+				.ys-btn
+					border: solid 1px $color-blanco1
+					cursor: pointer
+					max-width: 200px
+					margin: 0 auto
+					padding-left: 0
+					padding-right: 0
+					text-align: center
+
+	[data-nameSection=sectionThinking-proceso]
+		background-color: $color-blanco2
+		.ys-colext-1
+			background-color: $color-morado1
+			.ys-subtitulo
+				color: $color-blanco1
+			.ys-content-p
+				color: $color-blanco1
+			.ys-content-btn
+				background-image: none		
+		.ys-colext-2			
+			position: relative
+			.ys-cerrar-especificaciones
+				background-image: url('../images/img-cerrar-morado.png')
+				top: 10%
+			.ys-content-tit
+				padding-bottom: 2.5em
+				h4
+					color: $color-morado1
+			.ys-content-mancha
+				background-color: transparent
+				.ys-img-mancha
+					position: relative
+					img
+						display: block
+						margin: 0 auto
+						margin-top: 15%
+						max-width: 524px
+						width: 100%
+					.ys-info-mancha
+						max-width: 250px
+						position: absolute
+
+						span
+							display: block
+							font-size: 1.25
+							font-family: $fuente-lato-regular
+							font-weight: bolder
+						p
+							color: $color-negro1
+							font-size: 0.7em							
+
+						&.ys-m-investigacion
+							color: $color-morado3
+							left: 10%
+							top: -25%
+							text-align: right
+
+						&.ys-m-proceso
+							color: $color-morado4
+							right: 10%
+							top: -25%
+						
+						&.ys-m-disenio
+							color: $color-morado5
+							left: 10%
+							text-align: right
+
+						&.ys-m-solucion
+							color: $color-morado6
+							right: 10%
+
+	[data-nameSection=sectionThinking-detallesproducto]
+		.ys-colext-1
+			background-color: $color-azul1
+			background-image: url('../images/img-back-thinking.png')
+			background-repeat: no-repeat
+			background-position: right center
+			padding-bottom: 4em
+
+			.ys-subtitulo
+				color: $color-blanco1
+			.ys-subtitulo-2
+				color: $color-blanco1
+				font-size: 1.625em
+				font-family: $fuente-lato-hairline
+				font-style: italic
+				margin-top: 3em
+				span
+					display: block
+					line-height: 1em
+			.ys-content-p
+				color: $color-blanco1
+				font-family: $fuente-lato-hairline
+				font-size: 0.8em
+				max-width: 250px
+				padding-top: 25%
+		.ys-colext-2
+			padding-left: 0
+			position: relative
+			.ys-cerrar-detallesproducto
+				background-image: url('../images/img-cerrar-blanco.png')
+				z-index: 3
+			.carousel				
+				ol					
+					&.carousel-indicators
+						left: auto				
+						right: 5%
+						top: 50%
+						width: auto
+						li
+							display: block
+							margin-bottom: 0.25em
+				.carousel-control
+					display: none
+				.carousel-inner
+					.item
+						.carousel-caption
+							bottom: 0
+							left: auto
+							padding-bottom: 0
+							right: 5%
+							text-align: right
+							h3
+								font-family: $fuente-lato-blackitalic
+								font-size: 1.25em
+								line-height: 1em
+								margin: 0
+								padding: 0								
+							p
+								font-family: $fuente-lato-regular
+								font-size: 0.85em
+	&#ys-section-design
+		.ys-colext-1
+			.ys-content-btn
+				background-color: transparent
+
+	&#ys-section-marketing		
+		.ys-colext-1		
+			.ys-subtitulo
+				color: $color-verde2
+			.ys-content-btn
+				background-image: url('../images/frase-marketing.png')
+				.ys-btn
+					border: solid 1px $color-verde2
+
+		[data-nameSection=sectionThinking-especificaciones]
+			.ys-colext-2
+				background-color: $color-verde2
+
+		[data-nameSection=sectionThinking-proceso]
+			.ys-colext-1
+				background-color: $color-verde2	
+			.ys-subtitulo
+				color: $color-blanco1	
+			.ys-colext-2
+				.ys-cerrar-especificaciones
+					background-image: url('../images/cerrar_Marketing.png')
+					top: 10%
+				.ys-content-tit
+					h4
+						color: $color-verde2
+				.ys-content-mancha
+					.ys-img-mancha
+						.ys-info-mancha
+							&.ys-m-investigacion
+								color: $color-verde2
+
+							&.ys-m-proceso
+								color: $color-verde2
+							
+							&.ys-m-disenio
+								color: $color-verde2
+
+							&.ys-m-solucion
+								color: $color-verde2
+	&#ys-section-arqui
+		.ys-colext-1		
+			.ys-subtitulo
+				color: $color-rosa
+			.ys-content-btn
+				background-image: url('../images/frase-arqui.png')
+				.ys-btn
+					border: solid 1px $color-rosa
+
+		[data-nameSection=sectionThinking-especificaciones]
+			.ys-colext-2
+				background-color: $color-rosa
+
+		[data-nameSection=sectionThinking-proceso]
+			.ys-colext-1
+				background-color: $color-rosa
+			.ys-subtitulo
+				color: $color-blanco1	
+			.ys-colext-2
+				.ys-cerrar-especificaciones
+					background-image: url('../images/cerrar_arqui.png')
+					top: 10%
+				.ys-content-tit
+					h4
+						color: $color-rosa
+				.ys-content-mancha
+					.ys-img-mancha
+						.ys-info-mancha
+							&.ys-m-investigacion
+								color: $color-rosa
+
+							&.ys-m-proceso
+								color: $color-rosa
+							
+							&.ys-m-disenio
+								color: $color-rosa
+
+							&.ys-m-solucion
+								color: $color-rosa
+	&#ys-section-web
+		.ys-colext-1		
+			.ys-subtitulo
+				color: $color-azul2
+			.ys-content-btn
+				background-image: url('../images/frase-web.png')
+				.ys-btn
+					border: solid 1px $color-azul2
+
+		[data-nameSection=sectionThinking-especificaciones]
+			.ys-colext-2
+				background-color: $color-azul2
+
+		[data-nameSection=sectionThinking-proceso]
+			.ys-colext-1
+				background-color: $color-azul2	
+			.ys-subtitulo
+				color: $color-blanco1	
+			.ys-colext-2
+				.ys-cerrar-especificaciones
+					background-image: url('../images/cerrar_web.png')
+					top: 10%
+				.ys-content-tit
+					h4
+						color: $color-azul2
+				.ys-content-mancha
+					.ys-img-mancha
+						.ys-info-mancha
+							&.ys-m-investigacion
+								color: $color-azul2
+
+							&.ys-m-proceso
+								color: $color-azul2
+							
+							&.ys-m-disenio
+								color: $color-azul2
+
+							&.ys-m-solucion
+								color: $color-azul2
+
+
+
+//--- --- ---
+
+@import 'styles-responsive.sass';
+
+//--- --- ---

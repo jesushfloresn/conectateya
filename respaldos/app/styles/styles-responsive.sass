@@ -1,0 +1,420 @@
+$fuente-lato-black : 'latoblack';
+$fuente-lato-regular : 'latoregular';
+$fuente-lato-hairline : 'latohairline';
+$fuente-lato-italic : 'latoitalic';
+$fuente-lato-blackitalic : 'latoblack_italic';
+
+$color-negro1 : #000;
+$color-blanco1 : #FFF;
+$color-blanco2 : #FBFBFB;
+$color-blanco3 : #FFFFFE;
+$color-verde1 : #5AFA79;
+$color-morado1 : #5E27F5;
+$color-morado2 : #5F28F6;
+$color-morado3: #A500FF;
+$color-morado4: #675CB7;
+$color-morado5: #6B01D8;
+$color-morado6: #2B137D;
+$color-azul1: #1B2634;
+$color-verde2: #62BCA3;
+$color-rosa: #EA0673;
+$color-azul2: #5AB8E1;
+
+//-------
+$color-verde3: #00F871;
+
+// = Min = 
+@media (min-width: 1200px)
+	.ys-seccion-conexiones
+		.ys-content-conexion2
+			.ys-subtitulo
+				padding-top: 5%
+				padding-bottom: 5%
+
+@media (min-width: 1200px) and (min-height: 700px)
+	.ys-seccion-inicio
+		& > .container
+			.ys-content-flamas
+				.ys-flamas
+					.ys-imgFlamas
+						width: 80%
+				.ys-nodos
+					top: -5.2em
+					.ys-imgNodos
+						width: 55%
+	.ys-seccion-conexiones
+		.ys-subtitulo
+			padding-top: 10%
+		.ys-content-conexion2
+			.ys-subtitulo
+				padding-top: 2%
+				padding-bottom: 1%
+
+			.ys-fila-1
+				margin-top: 2em
+				margin-bottom: 1em
+
+// = Max = 
+@media (max-width: 1560px)
+	.ys-seccion-conexiones
+		.ys-content-conexion1
+			.ys-colext-2				
+				background-size: contain
+
+@media (max-width: 1200px)
+	.ys-btn
+		min-width: 110px
+	.ys-seccion-conexiones
+		.ys-content-conexion1
+			.ys-content-btn
+				span
+					&:nth-of-type(1)
+						display: block
+						max-width: 130px
+		.ys-content-conexion2 
+			.ys-subtitulo
+				padding-top: 8%
+				padding-bottom: 4%
+			.ys-fila-1
+				margin-top: 1em
+				margin-bottom: 2em
+			.ys-fila-3
+				margin-top: 1.5em
+			
+	.ys-seccion-thinking
+		.ys-colext-1 
+			.ys-subtitulo
+				margin-top: 25%
+			.ys-content-p
+				padding-top: 25%
+		.ys-colext-2
+			.ys-contentgrid-cuadro
+				.ys-item
+					.ys-logo-item
+						span
+							img
+								display: block
+								max-width: 85px
+
+@media (max-width: 992px)
+	.ys-seccion-nav 
+		.container 
+			.navbar-header 
+				.navbar-brand 
+					img
+						margin: 0
+						width: 100px
+
+			.navbar-collapse 
+				.navbar-nav
+					clear: both
+					float: left					
+					li
+						a
+							font-size: 0.75em
+							padding-left: 0.5em
+							padding-right: 0.5em
+							padding-top: 0.25em
+
+	.ys-seccion-conexiones
+		.ys-colext-1
+			.ys-content-cols
+				& > div
+					padding-left: 0
+					padding-right: 0
+
+		.ys-content-conexion1
+			.ys-colext-2
+				display: none
+
+	.ys-seccion-thinking
+		.ys-colext-1
+			.ys-content-btn
+				margin-top: 25%
+
+	//Karla
+	#ys-modalContacto
+		font-size: 13px
+		.modal-content
+			.modal-body
+				padding-left: 1em
+				padding-right: 2em
+				.ys-col-2
+					min-height: 34.2em
+					.close
+						height: 30px
+						right: 1%
+						width: 30px
+					.ys-content-btn
+						& > div
+							padding-right: 0
+				.ys-dupla 
+					.ys-input
+						width: 100%
+	//Fin Karla
+@media (max-width: 991px)
+	.ys-seccion-thinking 
+		[data-nameSection=sectionThinking-especificaciones] 
+			.ys-colext-2 
+				.ys-datosEspecificaciones 
+					.ys-content-info 
+						.ys-col
+							&.ys-col-2
+								margin-left: 0
+
+
+@media (max-width: 768px)
+	.ys-seccion-thinking 
+		[data-nameSection=sectionThinking-especificaciones] 
+			.ys-colext-2 
+				.ys-datosEspecificaciones 
+					.ys-content-info 
+						.ys-col.ys-col-2
+							margin-left: 0
+		.ys-colext-2
+			padding-left: 7px
+			padding-right: 5px
+			.ys-contentgrid-cuadro
+				padding-left: 0
+				padding-top: 4em
+
+@media (max-width: 767px)
+	.navbar-default
+		.navbar-toggle
+			border-color: $color-verde1
+			&:hover
+				background-color: transparent
+			&:focus
+				background-color: transparent
+			.icon-bar
+				background-color: $color-verde1
+		.navbar-collapse
+			&.in
+				.nav
+					background-color: transparent
+					width: 100%					
+					li
+						a
+							font-size: 1em
+							padding-left: 1.5em
+						&.ys-red
+							display: inline-block
+							text-align: center
+							width: 24%
+							&.ys-li-tel
+								width: 49%
+	.ys-seccion-conexiones
+		padding-bottom: 1em
+
+		.ys-content-conexion1 
+			.ys-colext-2
+				display: none
+
+		.ys-content-conexion2 
+			.ys-btn-cerrar
+				height: 55px
+				right: 0
+				top: -5%
+				width: 55px
+
+			.ys-fila-2
+				& > div 
+					.ys-icons
+						& > div
+							width: 40%
+
+					.ys-line
+						top: 3.5em
+			.ys-fila-3
+				& > div 
+					.ys-icons
+						& > div
+							width: 40%
+					.ys-line
+						top: 3.5em
+
+	.ys-seccion-thinking 
+		.ys-colext-1 
+			.ys-subtitulo
+				margin-top: 10%
+			.ys-content-p
+				padding-top: 15%
+
+			.ys-content-btn
+				margin-top: 20%
+		
+		.ys-colext-2
+			padding-left: 0
+
+			.ys-contentgrid-cuadro
+				padding-left: 0
+				padding-right: 0
+			
+		[data-nameSection=sectionThinking-especificaciones]
+			.ys-colext-1
+				display: none
+
+			.ys-colext-2 
+				.ys-datosEspecificaciones 
+					.ys-content-tit
+						padding-top: 3em
+						padding-bottom: 2em
+						text-align: center
+					.ys-content-info
+						.ys-col
+							&.ys-col-1
+								max-width: 100%
+								padding-top: 1.5em
+								text-align: center
+								h6
+									text-align: center
+								.ys-ejemplo								
+									display: inline-block
+									padding-top: 1.5em
+									padding-left: 1em
+									padding-right: 1em
+								.ys-seccion-parrafo
+									max-width: 500px
+									margin: 0 auto
+									padding-top: 1em
+									padding-bottom: 2em
+
+							.ys-content-presupuesto
+								display: inline-block
+								width: 48%
+
+		[data-nameSection=sectionThinking-proceso] 
+			.ys-colext-1 
+				.ys-subtitulo
+					margin-top: 0
+					padding-top: 1em
+					padding-bottom: 1em
+				.ys-content-p
+					padding-top: 0%
+				.ys-content-btn
+					margin-top: 5%
+					padding-top: 5%
+
+	//Karla
+	#ys-modalContacto 
+		.modal-content 
+			.modal-body
+				position: relative
+				.ys-close-web
+					display: none
+				.ys-close-mobil
+					background-image: url(../images/img-cerrar-verde.png)
+					background-size: cover
+					background-color: rgba(0,0,0, 1)
+					border-radius: 50%
+					display: block
+					position: absolute
+					right: 1.5%
+					top: 1%
+					width: 30px
+					height: 30px
+				#formContent
+					position: relative
+					.ys-col-1
+						& > div
+							&:nth-of-type(1)
+								margin-top: 1.5em
+						h4
+							font-size: 3em
+						.ys-dupla
+							margin-bottom: 0.5em
+					.ys-col-2
+						min-height: 22.2em
+						.ys-dupla
+							margin-top: 1em
+						.ys-logo-parkluxe
+							display: none
+						button
+							&.close
+								display: none
+						
+						.ys-content-btn
+							margin-top: 1em
+							padding-bottom: 1em
+
+				.ys-msj-info
+					padding-top: 2.5em
+	//Fin Karla
+@media (max-width: 700px)
+	.ys-seccion-thinking 
+		[data-nameSection=sectionThinking-proceso] 
+			.ys-colext-2 
+				.ys-content-mancha 
+					.ys-img-mancha 
+						.ys-info-mancha							
+							max-width: 70%
+							margin: 0 auto
+							padding-bottom: 1.5em
+							position: relative
+							&.ys-m-investigacion,
+							&.ys-m-proceso,
+							&.ys-m-disenio,
+							&.ys-m-solucion
+								left: 0
+								text-align: left
+								right: 0
+								top: 0
+						img
+							margin-top: 0
+
+@media (max-width: 450px)
+	body
+		font-size: 12px
+	.ys-subtitulo
+		font-size: 2.5em
+	.ys-seccion-inicio 
+		& > .container 
+			.ys-slogan-bg 
+				span
+					font-size: 4em
+
+			.ys-slogan-sm 
+				span
+					font-size: 1em
+
+			.ys-content-btn 
+				span
+					font-size: 0.85em
+	
+	.ys-seccion-conexiones 
+		.ys-colext-1 
+			.ys-content-btn
+				span
+					display: block
+					padding-bottom: 1.5em
+					text-align: center					
+					&:nth-of-type(1)
+						max-width: 100%
+						img
+							display: inline-block
+							max-width: 100px
+					&:nth-of-type(3)
+						.ys-btn
+							display: block
+							max-width: 150px
+							margin: 0 auto
+	
+	.ys-seccion-thinking 
+		.ys-colext-1 
+			.ys-subtitulo
+				text-align: center
+
+		.ys-colext-2 
+			.ys-btncerrar
+				height: 25px
+				width: 25px
+				z-index: 5
+
+		[data-nameSection=sectionThinking-especificaciones] 
+			.ys-colext-2 
+				.ys-datosEspecificaciones 
+					.ys-content-tit
+						padding-top: 2em
+						padding-bottom: 0
+					
+
